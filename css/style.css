@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* display: table; */
+}
+.news-author-img {
+    width: 32px;
+}
+.news-author-published {
+    font-size: 12px;
+}
+.gray {
+    background-color: #e6e5e5;
+}
+#btnn:hover {
+    background-color: #eeefff;
+    color: #5d5fef;
+}
+.bg-custom {
+    background-color: #0d6efd;
+}
+#btnn:focus {
+    color: #5d5fef;
+    font-weight: 600;
+    background-color: #f2f2f2;
+}
+.arrow {
+    color: #5d5fef;
+}
+@media only screen and (max-width: 700px) {
+    .d-flex {
+        flex-direction: column;
+    }
+}

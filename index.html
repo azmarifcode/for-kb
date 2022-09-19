@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Kibria Portal</title>
+    </head>
+    <body class="gray">
+        <!-- Header Start-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-black fw-bold fs-4" href="#">
+                        <span class="btn btn-primary">Kibria</span>
+                        Portal
+                    </a>
+                    <button
+                        class="navbar-toggler bg-custom"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul
+                            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px"></ul>
+                        <ul class="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active fs-4 fw-bold"
+                                    aria-current="page"
+                                    href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fs-4"
+                                    style="color: gray"
+                                    href="blog/blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="navbar-brand" href="#">
+                                    <img
+                                        src="logo.jpg"
+                                        alt=""
+                                        width="40"
+                                        height="40"
+                                        class="d-inline-block rounded-circle mt-2" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <hr />
+        <!-- Header End -->
+        <!-- News Section -->
+        <main>
+            <section class="container mt-5">
+                <!-- Category section -->
+                <div
+                    class="d-flex justify-content-between gap-4"
+                    id="categorySide"></div>
+                <div class="my-5">
+                    <div class="alert alert-light fs-4" role="alert">
+                        <p id="findNews" class="ps-4 align-middle mb-0">
+                            Numbers Of Items That Found For This Category
+                        </p>
+                    </div>
+                </div>
+                <!-- Spinner -->
+                <div id="spinner" class="d-none">
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn btn-dark" type="button" disabled>
+                            <span
+                                class="spinner-grow spinner-grow-sm"
+                                role="status"
+                                aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </div>
+                <!-- selection area  -->
+                <div id="newsSection"></div>
+                <!-- Modal -->
+                <div>
+                    <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div
+                                class="modal-content"
+                                id="news-details-modal"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/category.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
